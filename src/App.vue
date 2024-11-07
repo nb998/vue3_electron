@@ -2,23 +2,26 @@
  * @Author: zhaorong zhaorong@travelsky.com.cn
  * @Date: 2024-10-30 21:40:43
  * @LastEditors: zhaorong zhaorong@travelsky.com.cn
- * @LastEditTime: 2024-11-02 20:50:38
+ * @LastEditTime: 2024-11-07 19:58:26
  * @FilePath: /vue3_electron/src/App.vue
  * @Description: Do not edit
 -->
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Welcome to Your Vue.js App" />
+  <div id="container" style="height: 100%">
+    <nav>
+      <router-link to="/darkMode"></router-link>
+    </nav>
+    <keep-alive>
+      <router-view v-if="$route.meta.keepAlive"></router-view>
+    </keep-alive>
+    <router-view v-if="!$route.meta.keepAlive"></router-view>
+  </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
-
 export default {
   name: "App",
-  components: {
-    HelloWorld,
-  },
+  components: {},
 };
 </script>
 

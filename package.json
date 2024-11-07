@@ -11,11 +11,12 @@
     "postinstall": "electron-builder install-app-deps",
     "postuninstall": "electron-builder install-app-deps"
   },
-  "main": "background.js",
+  "main": "src/components/darkMode/nativeTheme.js",
   "dependencies": {
     "core-js": "^3.8.3",
     "electron-builder": "^24.13.3",
-    "vue": "^3.2.13"
+    "vue": "^3.2.13",
+    "vue-router": "^4.0.13"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
