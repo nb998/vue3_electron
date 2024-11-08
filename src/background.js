@@ -22,7 +22,7 @@ async function createWindow() {
       contextIsolation: !process.env.ELECTRON_NODE_INTEGRATION,
     },
   });
-  console.log("win.webContents========", win.webContents);
+  console.log("win.webContents11111========", win.webContents);
 
   if (process.env.WEBPACK_DEV_SERVER_URL) {
     // Load the url of the dev server if in development mode

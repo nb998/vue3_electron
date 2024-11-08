@@ -2,8 +2,8 @@
  * @Author: zhaorong zhaorong@travelsky.com.cn
  * @Date: 2024-11-07 14:17:10
  * @LastEditors: zhaorong zhaorong@travelsky.com.cn
- * @LastEditTime: 2024-11-08 11:38:09
- * @FilePath: /vue3_electron/src/components/darkMode/preload.js
+ * @LastEditTime: 2024-11-08 11:53:56
+ * @FilePath: /vue3_electron/src/preload.js
  * @Description: Do not edit
  */
 const { contextBridge, ipcRenderer } = require("electron");

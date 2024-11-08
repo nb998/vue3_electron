@@ -2,8 +2,8 @@
  * @Author: zhaorong zhaorong@travelsky.com.cn
  * @Date: 2024-11-06 20:24:54
  * @LastEditors: zhaorong zhaorong@travelsky.com.cn
- * @LastEditTime: 2024-11-08 15:03:44
- * @FilePath: /vue3_electron/src/components/darkMode/nativeTheme.js
+ * @LastEditTime: 2024-11-08 15:05:40
+ * @FilePath: /vue3_electron/src/nativeTheme.js
  * @Description: 主进程 js
  */
 const { app, BrowserWindow, ipcMain, nativeTheme } = require("electron");
@@ -15,9 +15,8 @@ async function createWindow() {
     height: 600,
     webPreferences: {
       nodeIntegration: true,
-      contextIsolation: false,
+      contextIsolation: true,
       preload: path.join(__dirname, "src/components/darkMode/preload.js"),
-      webSecurity: false, //这里改为false，没有就添加一行
     },
   });
   // win.loadFile("app.vue");
